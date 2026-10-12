@@ -1,0 +1,59 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; background: #f3f5f9; color: #1f2937; }
+h2 { margin: 0 0 16px; }
+.shell { min-height: 100vh; }
+.topbar { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; background: #1e3a8a; color: #fff; padding: 12px 24px; }
+.brand { font-weight: 700; font-size: 18px; }
+.topbar nav { display: flex; gap: 6px; flex: 1; flex-wrap: wrap; }
+.topbar nav a { color: #c7d2fe; text-decoration: none; padding: 6px 12px; border-radius: 6px; }
+.topbar nav a.active, .topbar nav a:hover { background: rgba(255,255,255,.15); color: #fff; }
+.user { display: flex; align-items: center; gap: 10px; font-size: 14px; }
+.content { max-width: 1100px; margin: 0 auto; padding: 24px 16px; }
+.card { background: #fff; border-radius: 10px; box-shadow: 0 1px 3px rgba(0,0,0,.08); padding: 16px; }
+.table-wrap { overflow-x: auto; padding: 0; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid #eef0f4; white-space: nowrap; }
+th { background: #f8fafc; font-weight: 600; color: #475569; }
+.center { text-align: center; }
+.muted { color: #6b7280; }
+.actions { display: flex; gap: 6px; }
+.page-head { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 16px; }
+.page-head h2 { margin: 0; }
+.row { display: flex; gap: 10px; flex-wrap: wrap; }
+input, select { padding: 9px 12px; border: 1px solid #d1d5db; border-radius: 6px; font-size: 14px; width: 100%; background: #fff; }
+.row input { width: 260px; }
+label { display: block; margin: 10px 0 4px; font-size: 13px; font-weight: 600; color: #374151; }
+.btn { background: #2563eb; color: #fff; border: none; padding: 9px 16px; border-radius: 6px; cursor: pointer; font-size: 14px; }
+.btn:hover { background: #1d4ed8; }
+.btn:disabled { opacity: .6; cursor: not-allowed; }
+.btn.small { padding: 5px 10px; font-size: 12px; }
+.btn.danger { background: #dc2626; }
+.btn.danger:hover { background: #b91c1c; }
+.btn.ghost { background: transparent; border: 1px solid currentColor; }
+form .btn { margin-top: 16px; }
+.alert { padding: 10px 14px; border-radius: 6px; margin-bottom: 14px; font-size: 14px; }
+.alert.error { background: #fee2e2; color: #991b1b; }
+.alert.success { background: #dcfce7; color: #166534; }
+.badge { padding: 3px 9px; border-radius: 999px; font-size: 12px; font-weight: 600; }
+.badge.ok { background: #dcfce7; color: #166534; }
+.badge.bad { background: #fee2e2; color: #991b1b; }
+.badge.warn { background: #fef3c7; color: #92400e; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; }
+.stat { background: #fff; border-radius: 10px; padding: 20px; border-left: 5px solid; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+.stat-value { font-size: 30px; font-weight: 700; }
+.stat-label { color: #6b7280; margin-top: 4px; }
+.stat.blue { border-color: #2563eb; } .stat.green { border-color: #16a34a; } .stat.orange { border-color: #ea580c; }
+.stat.red { border-color: #dc2626; } .stat.purple { border-color: #7c3aed; }
+.overlay { position: fixed; inset: 0; background: rgba(0,0,0,.45); display: flex; align-items: center; justify-content: center; padding: 16px; z-index: 10; }
+.modal { background: #fff; border-radius: 10px; padding: 20px; width: 100%; max-width: 440px; max-height: 90vh; overflow-y: auto; }
+.modal-head { display: flex; justify-content: space-between; align-items: center; }
+.modal-head h3 { margin: 0; }
+.login-wrap { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 16px; }
+.login-card { width: 100%; max-width: 380px; }
+.login-card h2 { margin-bottom: 4px; }
+.issue-form { display: grid; grid-template-columns: 1fr 1fr auto; gap: 12px; align-items: center; margin-bottom: 16px; }
+.issue-form .btn { margin-top: 0; }
+.tabs { display: flex; gap: 6px; margin-bottom: 12px; }
+.tab { border: 1px solid #d1d5db; background: #fff; padding: 6px 14px; border-radius: 999px; cursor: pointer; }
+.tab.active { background: #2563eb; color: #fff; border-color: #2563eb; }
+@media (max-width: 700px) { .issue-form { grid-template-columns: 1fr; } .row input { width: 100%; } }
